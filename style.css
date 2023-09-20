@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.progress-bar{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    gap: 4rem;
+}
+.centerline{
+    position: absolute;
+    top: 50%;
+    border: 1px solid white;
+    width: 100%;
+}
+.centerinsideline{
+position: absolute;
+width: 10%;
+top: 50%;
+border: 1px solid blue;
+z-index: 1;
+transition: width ease-in-out .4s;
+}
+
+.page-no:first-child{
+    border: 2px solid blue;
+}
+.page-no{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-size: 20px;
+    overflow: hidden;
+    z-index: 999;
+    transition: border linear .5s;
+}
+
+
+.btn{
+    margin-top: 5rem;
+}
+
+.btn button{
+    padding: 8px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-weight: 600;
+    border: 1px solid whitesmoke;
+    background: linear-gradient(to right,rgb(131, 131, 236) ,white);
+    cursor: pointer;
+    transition: all linear .5s;
+}
+
+.btn button:hover{
+    background: linear-gradient( white,rgb(131, 131, 236));
+    border: 1px solid rgb(131, 131, 236);
+    box-shadow: 0 0 8px whitesmoke;
+}
